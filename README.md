@@ -1,4 +1,4 @@
-#A practical Terraform template
+# A practical Terraform template
 
 *Please note the created VMs or other cloud services will be payable by yourself*
 
@@ -9,7 +9,7 @@
 * Flexiability to support multiple applications
 * Multi-cloud supports, GCP for the first version
 
-##Configuration and Pre-requisite
+## Configuration and Pre-requisite
 * terraform 0.11
 
 ### To support GCP
