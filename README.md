@@ -18,16 +18,16 @@
 ## Ansible structure
 *  terraform
 	* dev
-		```main.tf```
-        ```variables.tf```
-        ```terraform.tfvars```
+		* ```main.tf```
+		* ```variables.tf```
+		* ```terraform.tfvars```
     * prod
-        ```Same structure and files as dev folder, ```
-        ```but different variable values in terraform.tfvars```
+        * Same structure and files as dev folder,
+        * but different variable values in terraform.tfvars
     * images
-        ```compute.tf```
-        ```variables.tf```
-        ```output.tf```
+        * ```compute.tf```
+        * ```variables.tf```
+        * ```output.tf```
 
 ## How to use
 * Pull out the code
@@ -39,4 +39,4 @@
 
 ### Best practices
 * Always update terraform.tfvars to revise servers, e.g. create/destroy an instance, just change the instance_count
-* Keep all servers created by Terraform scripts, keep infra as code, e.g. server creation history, attribute updates and etc.
+* Keep all servers managed by Terraform, keep infra as code, e.g. server creation, attribute updates records and etc.
