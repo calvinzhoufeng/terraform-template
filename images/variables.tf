@@ -1,58 +1,62 @@
 ############ the variables in this file are passed in at environment level ############
-#####This file is duplicated from ../dev/variables.tf
 
 variable "project" {
-  default = ""
+  default     = ""
+  description = "The project name in GCP"
 }
 
 variable "region" {
-  default = ""
+  default     = ""
+  description = "The region that project is located"
 }
 
 variable "zone" {
-  default = ""
+  default     = ""
+  description = "The zone that instances are running in"
 }
 
 variable "disk_type_ssd" {
-  default = "pd-ssd"
+  default     = "pd-ssd"
+  description = "SSD hard disk type"
 }
 
 variable "disk_type_standard" {
-  default = "pd-standard"
+  default     = "pd-standard"
+  description = "Standard hard disk type"
 }
 
 variable "stages" {
-  default = ""
+  default     = ""
+  description = "Used as env value of labels key-value"
 }
 
 //admin
 variable "tomcat_server_type" {
-  default = ""
+  default     = ""
+  description = "Used as env value of labels key-value"
 }
 
 variable "web_server_image" {
-  default = ""
+  default     = ""
+  description = "The image used when to create disk"
 }
 
 variable "web_server_count" {
-  default = ""
+  default     = 0
+  description = "Indicate how many instances to be created for this app"
 }
 
 variable "web_server_name" {
-  default = ""
+  default     = ""
+  description = "Indicate the app name"
 }
 
 variable "web_server_machine_type" {
-  default = ""
+  default     = ""
+  description = "Indicate the server CPU and RAM"
 }
 
 variable "web_server_size" {
-  default     = ""
-  description = "Boot disk size"
-}
-
-variable "web_server_allow_public_ip" {
-  type        = "string"
-  default     = "false"
-  description = "The server has no public IP by default"
+  default     = 0
+  description = "Indicate the boot disk size"
 }

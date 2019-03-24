@@ -1,4 +1,4 @@
-// Common variables
+// Samples for common variables
 // Modify below variables based on your GCP project
 project = "dev-project"
 
